@@ -2,7 +2,7 @@
 
 * [✨ Welcome](README.md)
 
-## Getting Started
+## 🚦 Getting Started
 
 * [myDU Server Installation Guide](getting-started/quickstart.md)
 * [Publish your docs](getting-started/publish-your-docs.md)
