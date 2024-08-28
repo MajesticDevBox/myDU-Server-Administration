@@ -1,5 +1,5 @@
 ---
-cover: https://gitbookio.github.io/onboarding-template-images/header.png
+cover: .gitbook/assets/gitbook_myDU_header.png
 coverY: 0
 layout:
   cover:
@@ -17,11 +17,9 @@ layout:
     visible: true
 ---
 
-# Welcome
+# ✨ Welcome
 
-Welcome to the GitBook Starter Template! Here you'll get an overview of all the amazing features GitBook offers to help you build beautiful, interactive documentation.
-
-You'll see some of the best parts of GitBook in action — and find help on how you can turn this template into your own.
+This resource has been put together to allow for a centralized place that more than one person can edit to maintain and archive Guides and Resorces for hosting and administering myDU Servers.
 
 ### Jump right in
 
