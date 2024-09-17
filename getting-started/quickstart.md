@@ -178,7 +178,7 @@ Example:
 
 ```json
 {
-  "tld": "omegacorp.club",
+  "tld": "yourdomain.com",
   "prefix": "du-",
   "services": {
     "queueing":"login",
