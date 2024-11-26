@@ -195,7 +195,7 @@ The ports <mark style="color:yellow;">`443`</mark>, and <mark style="color:yello
 
 Temporarily disable any service (apache, nginx) listening on port <mark style="color:yellow;">`80`</mark> of the computer running the my-du server, and type the following:
 
-```
+```docker
 ./scripts/down.sh
 ```
 
@@ -207,11 +207,21 @@ Make sure ports <mark style="color:yellow;">80</mark> and <mark style="color:yel
 
 **Create new certs:**
 
-```
+```powershell
 ./scripts/ssl.sh --create-certs
 ```
 
 This will start certbot from letsencrypt to request the certificate for the 5 domain names defined in <mark style="color:yellow;">`config/domains.json`</mark> . It might ask you a few questions on the terminal. Note that it will emit a challenge by connecting to port <mark style="color:yellow;">`80`</mark> on all five domains, so you might have to wait for DNS propagation before this step. If all went well the keys and certificates are created in the <mark style="color:yellow;">`letsencrypt`</mark> folder.
+
+#### &#x20;Wrapping Up
+
+Once SSL is enabled your stack only uses two ports: <mark style="color:yellow;">443</mark> and <mark style="color:yellow;">9210</mark>. Your stack server address becomes <mark style="color:yellow;">https://du-queueing.MYDOMAIN:443</mark>. The certificates are valid for 3 months and can be renewed by running:
+
+```docker
+./scripts/ssl.sh --update-certs
+```
+
+
 
 ## 🥞 Reconfiguring the stack:
 
